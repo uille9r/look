@@ -17,7 +17,7 @@ def main():
     if not args.folder.is_dir():
         parser.error(f"输入目录不存在或不是目录：{args.folder}")
 
-    files = sorted((p for p in args.folder.iterdir() if p.is_file() and p.suffix == ".srt"), key=lambda p: p.name)
+    files = sorted((p for p in args.folder.iterdir() if p.is_file() and p.suffix.lower() == ".srt"), key=lambda p: p.name)
     with args.output.open("w", encoding="utf-8-sig", newline="") as output:
         writer = csv.writer(output)
         writer.writerow(["file", "cues"])
