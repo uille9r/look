@@ -11,4 +11,4 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m unittest -v
-# 此文件是教学配置；实际 GitHub Actions 尚未运行。
+# 该配置已在 GitHub Actions 上实际运行并通过（main / feature / baseline 共 4 次）。
