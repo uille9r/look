@@ -1,0 +1,10 @@
+report.csv
+__pycache__/
+.env
+.env.*
+!.env.example
+*.[mM][pP]4
+*.[mM][oO][vV]
+*.[mM][kK][vV]
+*.[aA][vV][iI]
+*.[wW][eE][bB][mM]
