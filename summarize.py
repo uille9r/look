@@ -10,7 +10,7 @@ TIMELINE = re.compile(r"^\d{2}:\d{2}:\d{2},\d{3}\s+-->\s+\d{2}:\d{2}:\d{2},\d{3}
 
 
 def main():
-    parser = argparse.ArgumentParser(description="统计指定目录中小写 .srt 文件的字幕段数。")
+    parser = argparse.ArgumentParser(description="统计指定目录中 .srt 文件的字幕段数（后缀不区分大小写）。")
     parser.add_argument("folder", type=Path, help="字幕所在目录（不递归子目录）")
     parser.add_argument("output", type=Path, help="CSV 输出路径")
     args = parser.parse_args()
