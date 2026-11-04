@@ -31,7 +31,7 @@ file,cues
 python3 -m unittest -v
 ```
 
-初始版本有 3 个测试：样例结果与中文/BOM、空目录仍有表头、无效路径报中文错误并返回非零。补上大写字幕后缀后共 4 个。实际 GitHub Actions 尚未运行；`.github/workflows/check.yml` 展示以后上传到自己的练习仓库时可以使用的配置。
+初始版本有 3 个测试：样例结果与中文/BOM、空目录仍有表头、无效路径报中文错误并返回非零。补上大写字幕后缀后共 4 个。这些测试已在 GitHub Actions 上真实运行并通过；`.github/workflows/check.yml` 就是实际使用的配置。
 
 ## 你要做的小功能
 
